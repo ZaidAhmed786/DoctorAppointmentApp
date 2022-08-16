@@ -1,21 +1,24 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const WelCome = () => {
+import Home from './Home'
+
+const WelCome = ({navigation}) => {
   return (
     
-      <>
-        <View style={{flex:1 }}>
+      <> 
+         <View >
+         <View style={{flex:1 }}>
          <Image
          style={{
           width : 400,
-          height : 740,
+          height : 600,
           resizeMode : "cover"
          }}
          source = {require("../../assets/ONLINEMEDICAL.jpg")}
          
          />
-        </View>
+        </View> 
         <View style={styles.IndicatorContainer} >
         <View style={styles.Indicator}></View>
         <View style={styles.IndicatorCircle}/>
@@ -23,11 +26,14 @@ const WelCome = () => {
         
         </View>
         <View>
-        <TouchableOpacity activeOpacity={0.8} style={styles.button}>
+        <TouchableOpacity activeOpacity={0.8}
+                          style={styles.button}
+                          onPress={()=> { navigation.navigate('Home')}}>
           <Text style={styles.buttonTitle}>NEXT</Text>
         </TouchableOpacity>
-        </View>
+        </View> 
         
+        </View> 
         
     </>
     
@@ -44,7 +50,7 @@ const styles = StyleSheet.create({
     alignItems:"center",
     flex:1,
     height:50,
-    top:600,
+    top: 540,
     marginHorizontal : 190,
     
   },
@@ -71,7 +77,7 @@ const styles = StyleSheet.create({
    backgroundColor : "#12656b",
     justifyContent:"center",
     alignItems:"center",
-    top:660,
+    top:610,
     marginHorizontal : 65,
     borderRadius : 30,
     color:"white"
