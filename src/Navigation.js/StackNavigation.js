@@ -7,13 +7,18 @@ import Home from '../screens/Home';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
+
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const Stack = createNativeStackNavigator();
 const StackNavigation = () => {
     return (
         <NavigationContainer> 
-          <Stack.Navigator>
+          <Stack.Navigator  screenOptions={{
+    headerShown: false
+  }}>
           <Stack.Screen name="WelCome" component={WelCome} />
-          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="BottomNavigation" component={BottomNavigation} />
+          
         </Stack.Navigator>
         </NavigationContainer>
       );

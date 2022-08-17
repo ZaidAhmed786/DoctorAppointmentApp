@@ -7,15 +7,17 @@ const WelCome = ({navigation}) => {
   return (
     
       <> 
-         <View >
+         <View style={{backgroundColor:"white" }}>
          <View style={{flex:1 }}>
          <Image
          style={{
           width : 400,
           height : 600,
-          resizeMode : "cover"
+          resizeMode : "contain",
+          
+          backgroundColor:"white"
          }}
-         source = {require("../../assets/ONLINEMEDICAL.jpg")}
+         source = {require("../../assets/Health.jpg")}
          
          />
         </View> 
@@ -28,7 +30,7 @@ const WelCome = ({navigation}) => {
         <View>
         <TouchableOpacity activeOpacity={0.8}
                           style={styles.button}
-                          onPress={()=> { navigation.navigate('Home')}}>
+                          onPress={()=> { navigation.navigate('BottomNavigation')}}>
           <Text style={styles.buttonTitle}>NEXT</Text>
         </TouchableOpacity>
         </View> 
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     alignItems:"center",
     flex:1,
     height:50,
-    top: 540,
+    top: 580,
     marginHorizontal : 190,
     
   },
