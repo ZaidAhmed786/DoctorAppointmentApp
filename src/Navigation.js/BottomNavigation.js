@@ -14,9 +14,9 @@ const BottomNavigation = () => {
     return (
       
       
-      <Tab.Navigator  tabBarOptions={{ showLabel: false } }>
-        <Tab.Screen name="Home" component={Home}
-        options={{tabBarIcon : () => <Icon name='home-filled' color="#12656b" size={30} />}} />
+      <Tab.Navigator  screenOptions={{"tabBarStyle": [{"display": "flex"},null]}}>
+        <Tab.Screen name="Home" component={Home} 
+        options={{headerShown: false , tabBarIcon : () => <Icon name='home-filled' color="#12656b" size={30} />}} />
          <Tab.Screen name="Favorite" component={Favorite}
         options={{tabBarIcon : () => <Icon name='favorite' color="#12656b" size={30} />}} />
         <Tab.Screen name="SearchDoctor" component={SearchDoctor}
