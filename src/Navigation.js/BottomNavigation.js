@@ -2,7 +2,7 @@ import { StyleSheet, TabBarIOSItem, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import Home from '../screens/Home';
+import Home from '../screens/HomeScreen/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import Favorite from '../screens/Favorite';
 import Account from '../screens/Account';

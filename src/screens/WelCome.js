@@ -1,7 +1,7 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-import Home from './Home'
+
 
 const WelCome = ({navigation}) => {
   return (

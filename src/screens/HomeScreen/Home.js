@@ -1,9 +1,13 @@
-import { StyleSheet, Text, View , Image } from 'react-native'
+import { StyleSheet, Text, View , Image, TextInput, ScrollView } from 'react-native'
 import React from 'react'
-
+import CategoryList from './CategoryList';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+
 const Home = () => {
+
+
+ 
   return (
     <View style={{flex:1}}>
       <View style={styles.header}>
@@ -14,16 +18,21 @@ const Home = () => {
         </View>
         <Text style={{marginTop:5,fontSize:18}}>what do you want today</Text>
         </View>
-        <Image source={require('../../assets/user.jpeg')} style={{height:50,width:50,borderRadius:25}}/>
+        <Image source={require('../../../assets/user.jpeg')} style={{height:50,width:50,borderRadius:25}}/>
       </View>
       <View style={{marginTop:40 , flexDirection : "row" , paddingHorizontal : 20}}>
       <View style={styles.searchInput}>
-        <View style={{marginLeft:280 ,  backgroundColor:"#12656b" , borderRadius:20 , height:35 , width:35 , alignItems:"center" , justifyContent:"center"}}>
-        <Icon name='search' color="white" size={30} />
+        
+      <TextInput
+        style={{flex:1, fontSize:18}}
+        placeholder = 'Search for Doctors'
+        />
+        <Icon name='search' color="black" size={30} />
         </View>
       
       </View>
-      </View>
+      <CategoryList />
+      
     </View>
   )
 }
@@ -39,11 +48,26 @@ const styles = StyleSheet.create({
   },
   searchInput:{
     flex : 1,
-    height : 50,
-    borderRadius : 10,
+    height : 45,
+    borderRadius : 5,
     flexDirection:"row",
-    backgroundColor : "#D3D3D3",
+    backgroundColor : "#E3E3E3",
     alignItems:"center",
-    paddingHorizontal:20
+    paddingHorizontal:15
+  },
+  Category : {
+    marginTop:0,
+    padding:0,
+
+  },
+  CategoryText:{
+     fontSize:20,
+     color:"black",
+     marginTop:30,
+    padding:10,
+  },
+  CategoryList:{
+    
   }
+  
 })

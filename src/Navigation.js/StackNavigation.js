@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import BottomNavigation from '../Navigation.js/BottomNavigation'
 import WelCome from '../screens/WelCome'
-import Home from '../screens/Home';
+import Home from '../screens/HomeScreen/Home';
 
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
