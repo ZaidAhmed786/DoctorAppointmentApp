@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View , Image, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 import CategoryList from './CategoryList';
+import SearchInput from './SearchInput';
+import Cards from './Cards';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
@@ -20,18 +22,9 @@ const Home = () => {
         </View>
         <Image source={require('../../../assets/user.jpeg')} style={{height:50,width:50,borderRadius:25}}/>
       </View>
-      <View style={{marginTop:40 , flexDirection : "row" , paddingHorizontal : 20}}>
-      <View style={styles.searchInput}>
-        
-      <TextInput
-        style={{flex:1, fontSize:18}}
-        placeholder = 'Search for Doctors'
-        />
-        <Icon name='search' color="black" size={30} />
-        </View>
-      
-      </View>
+      <SearchInput/>
       <CategoryList />
+      <Cards />
       
     </View>
   )
