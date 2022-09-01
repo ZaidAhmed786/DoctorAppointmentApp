@@ -6,7 +6,7 @@ import Home from '../screens/HomeScreen/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import Favorite from '../screens/Favorite';
 import Account from '../screens/Account';
-import SearchDoctor from '../screens/SearchDoctor';
+import SearchDoctor from '../screens/SearchDoctor'
 import Pharmacy from '../screens/Pharmacy';
  
 const Tab = createBottomTabNavigator();
