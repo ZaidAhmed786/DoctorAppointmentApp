@@ -26,6 +26,7 @@ const Home = () => {
       <CategoryList />
       <Cards />
       
+      
     </View>
   )
 }
