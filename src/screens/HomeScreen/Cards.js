@@ -32,7 +32,7 @@ const Cards = () => {
                  <Image source={data.image} style={{height:100,width:50,resizeMode:"cover"}} />
                  <View>
                    <Text style={{fontSize:12,fontWeight:"900" , marginTop:10, marginLeft:12}}> {data.name}</Text>
-                    <Text style={{fontSize:10,fontWeight:"500" , marginTop:3, marginLeft:15}}>cardiolog</Text>
+                    <Text style={{fontSize:10,fontWeight:"500" , marginTop:3, marginLeft:15}}>cardiology</Text>
                   </View>
     
                   </View>
