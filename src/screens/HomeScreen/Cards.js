@@ -26,9 +26,11 @@ const Cards = () => {
 
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
            <View style={{flexDirection:"row", padding:10}}>
+           
              {data.map((data,index)=>(
               <View key={index} style={styles.card} >
               <View style={{flexDirection:"row"}}>
+                
                  <Image source={data.image} style={{height:100,width:50,resizeMode:"cover"}} />
                  <View>
                    <Text style={{fontSize:12,fontWeight:"900" , marginTop:10, marginLeft:12}}> {data.name}</Text>
